@@ -1,1 +1,26 @@
-  name: RepShops
+name: RepShops
+
+options:
+  developmentLanguage: ja
+options:
+  deploymentTarget:
+    iOS: 15.2
+options:
+  xcodeVersion: "13.2.1"
+
+targets:
+  RepShops:
+    type: application
+    platform: iOS
+    sources:
+      - RepShops
+  RepShopsTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - RepShopsTests
+  RepShopsUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - RepShopsUITests
