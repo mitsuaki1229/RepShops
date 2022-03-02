@@ -8,6 +8,11 @@ Reptile pet shops list.
 
 ## Install
 
+```shell
+$ mint bootstrap
+$ mint run xcodegen xcodegen generate
+```
+
 ## Usage
 
 ## Author
