@@ -2,10 +2,8 @@ name: RepShops
 
 options:
   developmentLanguage: ja
-options:
   deploymentTarget:
     iOS: 15.2
-options:
   xcodeVersion: "13.2.1"
 
 targets:
