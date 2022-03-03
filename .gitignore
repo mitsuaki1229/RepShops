@@ -89,5 +89,9 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+# XcodeGen
+
 *.xcodeproj
 *.xcworkspace
+Info.plist
+RepShops.entitlements

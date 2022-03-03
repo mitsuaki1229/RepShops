@@ -12,6 +12,15 @@ targets:
     platform: iOS
     sources:
       - RepShops
+    info:
+      path: RepShops/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+    entitlements:
+      path: RepShops/RepShops.entitlements
+      properties:
+        com.apple.security.application-groups: group.com.app
   RepShopsTests:
     type: bundle.unit-test
     platform: iOS
