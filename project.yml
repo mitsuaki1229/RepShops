@@ -1,10 +1,16 @@
 name: RepShops
 
 options:
+  bundleIdPrefix: com.RepShops
   developmentLanguage: ja
   deploymentTarget:
     iOS: 15.2
   xcodeVersion: "13.2.1"
+
+settings:
+  base:
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
 
 targets:
   RepShops:
@@ -26,8 +32,28 @@ targets:
     platform: iOS
     sources:
       - RepShopsTests
+    dependencies:
+      - target: RepShops
   RepShopsUITests:
     type: bundle.ui-testing
     platform: iOS
     sources:
       - RepShopsUITests
+    dependencies:
+      - target: RepShops
+
+schemes:
+  RepShops:
+    build:
+      targets:
+        RepShops: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
