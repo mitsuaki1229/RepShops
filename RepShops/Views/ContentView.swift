@@ -10,15 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            FirstPage()
+            ShopListPage()
                 .tabItem {
                     Text("A")
                 }
-            SecondPage()
+            MapPage()
                 .tabItem {
                     Text("B")
                 }
-            ThirdPage()
+            MyPage()
                 .tabItem {
                     Text("C")
                 }
