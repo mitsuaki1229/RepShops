@@ -6,6 +6,8 @@ Reptile pet shops list.
 
 ## Requirement
 
+See [project.yml](project.yml)
+
 ## Install
 
 ```shell
