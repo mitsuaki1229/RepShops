@@ -27,6 +27,15 @@ targets:
       path: RepShops/RepShops.entitlements
       properties:
         com.apple.security.application-groups: group.com.app
+    postCompileScripts:
+      - script: |
+                if which mint >/dev/null; then
+                   mint run swiftlint swiftlint autocorrect --format
+                   mint run swiftlint swiftlint
+                else
+                   echo "warning: Mint not installed, download from https://github.com/yonaskolb/Mint"
+                fi
+        name: Run SwiftLint
   RepShopsTests:
     type: bundle.unit-test
     platform: iOS

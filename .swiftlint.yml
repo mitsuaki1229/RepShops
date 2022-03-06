@@ -1,0 +1,8 @@
+disabled_rules:
+opt_in_rules:
+included:
+  - RepShops
+excluded:
+line_length:
+  warning: 300
+  error: 500
