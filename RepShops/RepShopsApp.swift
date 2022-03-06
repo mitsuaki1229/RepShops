@@ -11,7 +11,7 @@ import SwiftUI
 struct RepShopsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchScreen()
         }
     }
 }
