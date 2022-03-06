@@ -19,5 +19,26 @@
         "twiter": "https://twitter.com/EggRep",
         "description": "平塚にある爬虫類ショップ。",
         "imageName": ""
+    },
+    {
+        "id": 107,
+        "category": "reptiles",
+        "name": "ノーザンみしま",
+        "address1": "2-5-20",
+        "address2": "",
+        "city": "三島市幸原町",
+        "state": "静岡県",
+        "country": "JP",
+        "coordinates": {
+            "longitude": 35.13883593183896,
+            "latitude": 138.9113918841756
+        },
+        "phoneNumber": "055-987-4085",
+        "site": "https://www.norzan-mishima.com/",
+        "facebook": "https://www.facebook.com/norzan.m/",
+        "instagram": "https://www.instagram.com/norzan.m/",
+        "twiter": "https://twitter.com/norzanmishima",
+        "description": "静岡の三島にある爬虫類・熱帯魚を扱うショップ。",
+        "imageName": ""
     }
 ]

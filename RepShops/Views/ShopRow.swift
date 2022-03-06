@@ -11,8 +11,10 @@ struct ShopRow: View {
     var shop: Shop
 
     var body: some View {
-        Text(shop.name)
-        Spacer()
+        HStack {
+            Text(shop.name)
+            Spacer()
+        }
     }
 }
 
