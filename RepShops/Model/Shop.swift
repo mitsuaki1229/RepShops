@@ -36,7 +36,7 @@ struct Shop: Hashable, Codable, Identifiable {
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)
     }
-    
+
     var image: Image {
         Image(imageName)
     }
