@@ -1,23 +1,22 @@
 [
     {
-        "name": "EGG",
+        "id": 90,
         "category": "reptiles",
-        "address2": "",
+        "name": "EGG",
         "address1": "5-8-7",
+        "address2": "",
         "city": "平塚市平塚",
         "state": "神奈川県",
         "country": "JP",
-        "phoneNumber": "0463-35-0596",
-        "facebook": "",
-        "twiter": "https://twitter.com/EggRep",
-        "instagram": "",
-        "site": "https://rep-egg.ocnk.net/",
-        "id": 90,
-        "isFavorite": true,
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+            "longitude": 35.3285588490355,
+            "latitude": 139.33354306088938
         },
+        "phoneNumber": "0463-35-0596",
+        "site": "https://rep-egg.ocnk.net/",
+        "facebook": "",
+        "instagram": "",
+        "twiter": "https://twitter.com/EggRep",
         "description": "平塚にある爬虫類ショップ。",
         "imageName": ""
     }

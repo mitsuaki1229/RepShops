@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ShopListPage: View {
-    let shops = ["No 1", "No 2", "No 3"]
     var body: some View {
-        List {
-            ForEach(0 ..< shops.count) { index in
-                Text(shops[index])
-            }
+        List(shops) { shop in
+            ShopRow(shop: shop)
         }
+    }
+}
+
+struct ShopListPage_Previews: PreviewProvider {
+    static var previews: some View {
+        ShopListPage()
     }
 }
