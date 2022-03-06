@@ -32,12 +32,12 @@ struct ShopDetail: View {
                 Text("About Shop")
                     .font(.title2)
                 Text(shop.description)
-                
+
             }
             .padding()
-            
-            Spacer()
         }
+        .navigationTitle(shop.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
