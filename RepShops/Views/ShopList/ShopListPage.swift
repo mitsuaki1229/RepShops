@@ -9,12 +9,15 @@ import SwiftUI
 
 struct ShopListPage: View {
     var body: some View {
-        List(shops) { shop in
-            NavigationLink {
-                ShopDetail(shop: shop)
-            } label: {
-                ShopRow(shop: shop)
+        NavigationView {
+            List(shops) { shop in
+                NavigationLink {
+                    ShopDetail(shop: shop)
+                } label: {
+                    ShopRow(shop: shop)
+                }
             }
+            .navigationTitle("Reptile Shops")
         }
     }
 }
