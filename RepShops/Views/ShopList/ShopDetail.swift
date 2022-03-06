@@ -11,11 +11,32 @@ struct ShopDetail: View {
     var shop: Shop
 
     var body: some View {
-        VStack(alignment: .leading) {
-            MapView()
+        ScrollView {
+            MapView(coordinate: shop.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
-            Text("Hello, World!")
+
+            VStack(alignment: .leading) {
+                Text(shop.name)
+                    .font(.title)
+                HStack {
+                    Text(shop.city + shop.address1 + shop.address2)
+                    Spacer()
+                    Text(shop.state)
+                }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+
+                Divider()
+
+                Text("About Shop")
+                    .font(.title2)
+                Text(shop.description)
+                
+            }
+            .padding()
+            
+            Spacer()
         }
     }
 }

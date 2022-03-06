@@ -9,8 +9,8 @@
         "state": "神奈川県",
         "country": "JP",
         "coordinates": {
-            "longitude": 35.3285588490355,
-            "latitude": 139.33354306088938
+            "longitude": 139.33354306088938,
+            "latitude": 35.3285588490355
         },
         "phoneNumber": "0463-35-0596",
         "site": "https://rep-egg.ocnk.net/",
@@ -30,8 +30,8 @@
         "state": "静岡県",
         "country": "JP",
         "coordinates": {
-            "longitude": 35.13883593183896,
-            "latitude": 138.9113918841756
+            "longitude": 138.9113918841756,
+            "latitude": 35.13883593183896
         },
         "phoneNumber": "055-987-4085",
         "site": "https://www.norzan-mishima.com/",
