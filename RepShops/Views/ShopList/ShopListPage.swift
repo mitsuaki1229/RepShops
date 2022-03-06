@@ -10,7 +10,11 @@ import SwiftUI
 struct ShopListPage: View {
     var body: some View {
         List(shops) { shop in
-            ShopRow(shop: shop)
+            NavigationLink {
+                ShopDetail(shop: shop)
+            } label: {
+                ShopRow(shop: shop)
+            }
         }
     }
 }

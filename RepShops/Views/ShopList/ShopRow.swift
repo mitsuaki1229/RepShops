@@ -20,6 +20,10 @@ struct ShopRow: View {
 
 struct ShopRow_Previews: PreviewProvider {
     static var previews: some View {
-        ShopRow(shop: shops[0])
+        Group {
+            ShopRow(shop: shops[0])
+            ShopRow(shop: shops[1])
+        }
+        .previewLayout(.fixed(width: 300, height: 70))
     }
 }
