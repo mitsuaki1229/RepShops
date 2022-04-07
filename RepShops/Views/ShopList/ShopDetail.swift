@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ShopDetail: View {
+    @EnvironmentObject var shopsData: ShopsData
     var shop: Shop
 
     var body: some View {
@@ -42,7 +43,9 @@ struct ShopDetail: View {
 }
 
 struct ShopDetail_Previews: PreviewProvider {
+    static let shopsData = ShopsData()
+
     static var previews: some View {
-        ShopDetail(shop: shops[0])
+        ShopDetail(shop: shopsData.shops[0])
     }
 }

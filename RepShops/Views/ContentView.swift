@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var shopsData = ShopsData()
+
     var body: some View {
         TabView {
             ShopListPage()
+                .environmentObject(shopsData)
                 .tabItem {
                     Text("A")
                 }

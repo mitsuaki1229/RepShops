@@ -20,6 +20,7 @@ struct LaunchScreen: View {
             }
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    // TODO Get Favorite data and merge to shops data.
                     withAnimation {
                         isLoading = false
                     }

@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ShopListPage: View {
+    @EnvironmentObject var shopsData: ShopsData
+
     var body: some View {
         NavigationView {
-            List(shops) { shop in
-                NavigationLink {
-                    ShopDetail(shop: shop)
-                } label: {
-                    ShopRow(shop: shop)
+            List {
+                ForEach(shopsData.shops) { shop in
+                    NavigationLink {
+                        ShopDetail(shop: shop)
+                    } label: {
+                        ShopRow(shop: shop)
+                    }
                 }
             }
             .navigationTitle("Reptile Shops")
@@ -25,5 +29,6 @@ struct ShopListPage: View {
 struct ShopListPage_Previews: PreviewProvider {
     static var previews: some View {
         ShopListPage()
+            .environmentObject(ShopsData())
     }
 }

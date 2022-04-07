@@ -24,6 +24,8 @@ struct Shop: Hashable, Codable, Identifiable {
     var instagram: String
     var twiter: String
     var description: String
+    var isFavorite: Bool
+
     private var imageName: String
 
     struct Coordinates: Hashable, Codable {

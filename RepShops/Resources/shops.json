@@ -18,6 +18,7 @@
         "instagram": "",
         "twiter": "https://twitter.com/EggRep",
         "description": "平塚にある爬虫類ショップ。",
+        "isFavorite": true,
         "imageName": ""
     },
     {
@@ -39,6 +40,7 @@
         "instagram": "https://www.instagram.com/norzan.m/",
         "twiter": "https://twitter.com/norzanmishima",
         "description": "静岡の三島にある爬虫類・熱帯魚を扱うショップ。",
+        "isFavorite": false,
         "imageName": ""
     }
 ]
